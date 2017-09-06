@@ -9,6 +9,7 @@ You need a PHP-capable (5.6+) webserver (e.g. [XAMPP](https://www.apachefriends.
 1. Clone this repository into your the document root of your webserver
 
 2. Install dependencies and create config file:
+
     ```
     composer install
     cp config.sample.php config.php
