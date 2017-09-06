@@ -12,6 +12,7 @@ You need a PHP-capable (5.6+) webserver (e.g. [XAMPP](https://www.apachefriends.
 
     ```
     composer install
+    
     cp config.sample.php config.php
     ```
 
