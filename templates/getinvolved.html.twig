@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% set title = "Get Involved" %}
+
+{% block body %}
+<div class="container pad-top">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="thin">Get Involved</h2>
+            <p class="lead">We welcome all students across Manchester Universities and you don't need any previous technical experience.</p>
+            <p>At MUTTS we believe that the best ways to learn are both on the job and with practical training sessions based around the use of the equipment that we stock.</p>
+        </div>
+    </div>
+</div>
+    
+<div class="container marketing">
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Taster Sessions</h2>
+            <p class="lead">Every semester we host a taster session at the workshop where we roll out a selection of our equipment for anyone to come and have a go with. These sessions are perfect for people looking to get involved with Technical Theatre and find out what we do.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/getinvolved/1.jpg" alt="Mover">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+    
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">Regular Workshop Sessions</h2>
+            <p class="lead">Throughout the academic year we regularly meet (usually on a weekly basis) at The Arch, a workshop that we share with the <a href="http://www.mugss.org" target="_blank">Gilbert and Sullivan Society</a> on North Campus. There's always events to prep equipment for or training sessions taking place so come down, say hello and see how you can get involved.</p>
+            <p>Directions to The Arch can be found <a href="./arch">here</a>.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="img/getinvolved/2.jpg" alt="Desks">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Socials</h2>
+            <p class="lead">Sometimes its nice to get away from all that tech stuff. We're regularly in the pub after a workshop session and we also host an annual Christmas Dinner as well as a Curry Night for everyone to get together.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="img/getinvolved/3.jpg" alt="Hi-vis">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-7 order-md-1">
+            <h2 class="featurette-heading">Sound interesting?</h2>
+            <p class="lead">If the above interests you then make sure you keep up to date with our goings-on by joining our Mailing List.</p>
+            <p>Alternatively, feel free to get in touch with our <a href="./committee">committee</a> if you would like more information.</p>
+        </div>
+        <div class="col-md-5 order-md-2">
+            <form action="subscribe.php" method="post" style="padding-top: 5rem;">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address">
+                    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="g-recaptcha" data-sitekey="6Ld_jS8UAAAAAJttbOhM8zz-Oywx02medh1G0Uat"></div>
+                <input type="hidden" name="return" value="getinvolved">
+                <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Sign Up</button>
+            </form>
+            <br>
+            
+        </div>
+    </div>
+    
+</div>
+{% endblock %}

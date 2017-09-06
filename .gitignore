@@ -1,0 +1,4 @@
+vendor/
+compilation_cache/
+
+config.php

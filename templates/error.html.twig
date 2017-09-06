@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% set title = "Error" %}
+
+{% block body %}
+<div class="container pad-top">
+    {% if code == 404 %}
+        <h2>Page not found</h2>
+        <p>Unfortunately the requested page does not exist.</p>
+        <p>Please use one of the navigation links above to return to the site.</p>
+    {% else %}
+        <p>Something went wrong</p>
+    {% endif %}
+</div>
+{% endblock %}
