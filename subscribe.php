@@ -40,7 +40,7 @@ if (array_key_exists('list', $_POST))
 
 // Attempt to register the address with Mailman
 try {
-    $mm = new Services_Mailman($listshost, isset($list) ? $list : 'MUTTS-Announcements', $listspwd);
+    $mm = new Services_Mailman($listsHost, isset($list) ? $list : 'MUTTS-Announcements', $listspwd);
     $mm->subscribe($_POST['email']);
     
     $_SESSION['message'] = 'Thank you, your email has been added to the mailing list. You will receive a confirmation message shortly.';
