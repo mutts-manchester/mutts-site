@@ -4,7 +4,7 @@ require 'common.php';
 // Figure out what page we were going for based on the request URI
 $explodedUri = explode('/', $_SERVER['REQUEST_URI']);
 $page = $explodedUri[count($explodedUri) - 1];
-$template = $page == '' ? 'index.html.twig' : $page . '.html.twig';
+$template = $page == '' ? 'home.html.twig' : $page . '.html.twig';
 
 // Initialise template variables
 $vars = [];
