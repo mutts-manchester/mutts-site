@@ -14,4 +14,4 @@ You need a PHP-capable (5.6+) webserver (e.g. [XAMPP](https://www.apachefriends.
     composer install && cp config.sample.php config.php
     ```
 
-3. Edit configuration file for Mailman list server settings (if applicable) - the website will function fine without changing this, you just won't be able to subscribe to any lists
+3. *optional* Set `$twigCaching` in `config.php` to **false** to disable caching of templates to see your changes quicker when developing
