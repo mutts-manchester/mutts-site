@@ -4,7 +4,7 @@ This repository contains the public-facing MUTTS Website.
 
 ### How do I get set up? ###
 
-You need a PHP-capable (5.6+) webserver (e.g. [XAMPP](https://www.apachefriends.org/index.html) for Windows) and [Composer](http://www.getcomposer.org). No database required.
+You need PHP (5.6+) and [Composer](http://www.getcomposer.org). No database required.
 
 1. Clone this repository into your the document root of your webserver
 
@@ -15,3 +15,9 @@ You need a PHP-capable (5.6+) webserver (e.g. [XAMPP](https://www.apachefriends.
     ```
 
 3. *optional* Set `$twigCaching` in `config.php` to **false** to disable caching of templates to see your changes quicker when developing
+
+4. Run development server:
+
+    ```
+    php -S localhost:8000
+    ```
