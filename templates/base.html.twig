@@ -37,8 +37,8 @@
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="./" style=" margin-top: 4px;"><img src="img/logo.svg" style="height: 40px;"> <strong>MUTTS</strong></a>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom">
+            <a class="navbar-brand" href="./" style=" margin-top: 4px; "><img src="img/logo.svg" style="height: 40px;"> <strong>MUTTS</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -96,7 +96,7 @@
         {% block body %}{% endblock %}
 
         <div class="container">
-            <hr>
+            <hr class="featurette-divider" style="margin: 1rem 0;">
             <footer>
                 <p class="float-left">
                     &copy; {{ "now"|date("Y") }} MUTTS.

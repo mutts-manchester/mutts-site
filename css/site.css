@@ -6,12 +6,16 @@ body {
   padding-top: 70px;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  
 }
 
 .pad-top {
     padding-top: 10px;
 }
 
+.navbar-custom{
+  background-color: #336b5a;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -67,6 +71,15 @@ body {
 	transform: translate3d(0, 0, 0);
 }
 
+.btn-custom{
+  background-color: #1e8264;
+  border-color: #1e8264;
+}
+.btn-custom:hover{
+  background-color: white;
+  border-color: black;
+  color: #1e8264;
+}
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
@@ -90,12 +103,14 @@ body {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  background-color: #1e8264;
 }
 
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
+  color: #3b6357;
 }
 
 .thin {
