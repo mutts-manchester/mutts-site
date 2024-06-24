@@ -38,40 +38,47 @@
             }(document, 'script', 'facebook-jssdk'));
         </script>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom">
-            <a class="navbar-brand" href="./" style=" margin-top: 4px; "><img src="img/logo.svg" style="height: 40px;"> <strong>MUTTS</strong></a>
+            <a class="navbar-brand nav-link-custom" href="./" style=" margin-top: 4px; "><img src="img/logo.svg" style="height: 40px;"> <strong>MUTTS</strong></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item {% if title == 'Home' %}active{% endif %}">
-                        <a class="nav-link" href="./">Home</a>
+                        <a class="nav-link nav-link-custom" href="./">Home</a>
                     </li>
                     <li class="nav-item {% if title == 'About' %}active{% endif %}">
-                        <a class="nav-link" href="./about">About</a>
+                        <a class="nav-link nav-link-custom" href="./about">About</a>
                     </li>
                     <li class="nav-item {% if title == 'Get Involved' %}active{% endif %}">
-                        <a class="nav-link" href="./getinvolved">Get Involved</a>
+                        <a class="nav-link nav-link-custom" href="./getinvolved">Get Involved</a>
                     </li>
-                    <li class="nav-item {% if title == 'Work With Us' %}active{% endif %}">
-                        <a class="nav-link" href="./workwithus">Work With Us</a>
+                    <li class="nav-item dropdown {% if title == 'Work With Us' %}active{% endif %}">
+                        <a class="nav-link nav-link-custom dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Work with us
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item nav-link-custom" href="./workwithus">Get Started</a>
+                            <a class="dropdown-item nav-link-custom" href="./howwework">How We Work</a>
+                            <a class="dropdown-item nav-link-custom" href="./makethemost">Making The Most of Your Tech Crew</a>
+                        </div>
                     </li>
                     <li class="nav-item {% if title == 'Previous Work' %}active{% endif %}">
-                        <a class="nav-link" href="./previouswork">Previous Work</a>
+                        <a class="nav-link nav-link-custom" href="./previouswork">Previous Work</a>
                     </li>
                     <li class="nav-item {% if title == 'Committee' %}active{% endif %}">
-                        <a class="nav-link" href="./committee">Committee</a>
+                        <a class="nav-link nav-link-custom" href="./committee">Committee</a>
                     </li>
                     <li class="nav-item {% if title == 'Directions' %}active{% endif %}">
-                        <a class="nav-link" href="./directions">Directions</a>
+                        <a class="nav-link nav-link-custom" href="./directions">Directions</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link nav-link-custom dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Members
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" target="_blank" href="https://wiki.mutts.org.uk/">Wiki</a>
-                            <a class="dropdown-item" target="_blank" href="https://discord.link/mutts">Join our Discord</a>
+                            <a class="dropdown-item nav-link-custom" target="_blank" href="https://wiki.mutts.org.uk/">Wiki</a>
+                            <a class="dropdown-item nav-link-custom" target="_blank" href="https://discord.com/invite/EFZJDQQAJN">Join our Discord</a>
                         </div>
                     </li>
                 </ul>
@@ -98,13 +105,23 @@
         <div class="container">
             <hr class="featurette-divider" style="margin: 1rem 0;">
             <footer>
-                <p class="float-left">
+                <p>
                     &copy; {{ "now"|date("Y") }} MUTTS.
                     <br>
-                    Contact: <a href="mailto:committee@mutts.org.uk">committee@mutts.org.uk</a>
+                    Contact: <a href="mailto:committee@mutts.org.uk">committee@mutts.org.uk</a> 
+                    <br>
+                    <div class="socialmediaicons">
+                    &emsp;
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+                    <a href="https://www.instagram.com/mutts_crew/" target="_blank"><i class="fa fa-instagram" style='font-size:24px'></i></a>
+                    &emsp;
+                    <script src="https://kit.fontawesome.com/73c5907498.js" crossorigin="anonymous"></script>
+                    <a href="https://discord.com/invite/EFZJDQQAJN" target="_blank"><i class="fab fa-discord" style='font-size:24px'></i></a>
+                    </div>
                     <br>
                     Photos by Charlie Roberts (@charlie_.roberts), Lucy Amelia, and assorted MUTTS members
                 </p>
+                
             </footer>
         </div>
         
