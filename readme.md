@@ -5,6 +5,7 @@ This repository contains the public-facing MUTTS Website.
 ### How do I get set up? ###
 
 You need PHP (5.6+) and [Composer](http://www.getcomposer.org). No database required.
+This project uses twig version ^1.34, which is not compatible with modern versions of PHP and contains deprecated functionality. You will need to set up a compatible version of php in your local environment.
 
 1. Clone this repository into your the document root of your webserver
 
