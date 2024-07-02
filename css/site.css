@@ -179,10 +179,15 @@ th, td {
   }
   
 }
-@media (max-width: 58em) {
+@media (max-width: 65em) {
   th,td {
     padding:0.3rem;
     width: fit-content;
+  }
+  .carousel-caption h1{
+    margin-bottom: 1rem;
+    font-size:2rem;
+    line-height:1.1;
   }
   
 }
