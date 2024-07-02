@@ -6,26 +6,39 @@
 <div class="container pad-top">
     <div class="row">
         <div class="col-md-12">
-            <h2 class="thin">Directions to The Arch (Workshop)</h2>
-            <p class="lead">MUTTS operate out of The Arch, a workshop space shared with the <a href="http://www.mugss.org" target="_blank">Gilbert and Sullivan Society</a>.</p>
-            <p>The Arch is located on The University of Manchester North Campus between the Renold and Barnes Wallis buildings, as shown on the map below.</p>
-            <p>It is located underneath the overbridge between the two buildings. If coming from Oxford Road head on to Sackville Street then down the hill past the barrier opposite Retro Bar (the building next to the barrier is called The Gatehouse). You'll find us at the bottom of the hill.</p>
+            <h2 class="thin">Where to find us:</h2>
+            
+            <div class="row">
+            <div class="col-md-7 order-md-1">
+            <p class="lead">MUTTS runs out of two main spaces.</p>
+            <br>
+            <h3 class="thin">The Arch</h2>
+            <p class="lead">This is where we store our equipment, prepare for rigs, and give smaller group training sessions. It is named after the old railway arch which was the original home of our equipment and operations. If we have invited you to the Arch for a session, and you're unsure of directions, please speak to a committee member.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto" src="img/directions/arch.jpg" alt="The new arch warehouse">
+            </div>
+            </div>
+            <h3 class="thin">The SU Theatre and Lounge</h3>
+            <p class="lead">This is where we run our introductory training sessions, many of our rigs with UoM performing societies, and several of our social activities.
+            <br> Access Info: The theatre is found on the top floor of the Student Union building and is accessible via lift or stairs. The building has a step free entrance around the back, as well as disabled and gender-neutral toilets accessible by lift.
+            </p>
             <div id="map" style="height: 400px; width: 100%;"></div>
-            <script>
-                function initMap() {
-                var arch = {lat: 53.475311, lng: -2.232921};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 16,
-                      center: arch
-                    });
-                    var marker = new google.maps.Marker({
-                      position: arch,
-                      map: map
-                    });
-                }
-            </script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCorIRIAOBFG6y_CH_ZOlpgxXm-UkZFyEc&callback=initMap"></script>
-        </div>
-    </div>
+                <script>
+                    function initMap() {
+                    var arch = {lat: 53.46450910157849, lng: -2.232187461268788};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 16,
+                        center: arch
+                        });
+                        var marker = new google.maps.Marker({
+                        position: arch,
+                        map: map
+                        });
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCorIRIAOBFG6y_CH_ZOlpgxXm-UkZFyEc&callback=initMap"></script>
+                </div>
+            </div>
 </div>
 {% endblock %}
