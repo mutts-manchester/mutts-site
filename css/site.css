@@ -168,6 +168,10 @@ th, td {
     line-height: 1.4;
   }
 
+  .carousel-caption h1 {
+    font-size: 3.5rem;
+  }
+
   .featurette-heading {
     font-size: 50px;
   }
@@ -189,6 +193,12 @@ th, td {
     font-size:2rem;
     line-height:1.1;
   }
+
+  .carousel-caption  {
+    bottom: 1.25rem;
+  }
+
+  
   
 }
 .gallery {
