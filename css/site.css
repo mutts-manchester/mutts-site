@@ -198,6 +198,12 @@ th, td {
     bottom: 0.75rem;
   }
 
+  .img-fluid{
+    width:100%;
+    
+    
+  }
+
   
   
 }
